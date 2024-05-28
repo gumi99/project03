@@ -7,12 +7,12 @@ header nav ul li{padding: 0 30px;}
 header nav ul li a{font-size: 18px; color: #fff;}
 header nav ul li:hover a{text-decoration: underline;}
 
-#main-visual{width: 100%; height: 100vh; position: relative; overflow: hidden;}
+#main-visual{width: 100%; height: 120vh; position: relative; overflow: hidden;}
 #main-visual .main-bg{width: 100%; height: 100%; background: url(../img/bg.jpg) no-repeat; z-index: -1; }
 
 .planet1 img{position: absolute; top: 5%; left: -180px; width: 105%; height: auto;}
 .planet2 img{position: absolute; top: 59%; right: -90px; width: 50%; height: auto;}
-.planet3 .planet3-img img:first-child{position: absolute; top: 75%; left: -50px; width: 70%; transform: rotate(45deg);}
+.planet3 .planet3-img img:first-child{position: absolute; top: 75%; left: -50px; width: 60%; transform: rotate(45deg);}
 .planet3 .planet3-img img:last-child{position: absolute; top: 75%; left: 30px; width: 45%; height: auto; cursor: pointer;}
 
 .planet3 .planet3-click a{display: flex; justify-content: space-between;align-items: center; position: absolute; top:91%; left: 49%; background-color: #D9D9D9; padding: 10px 15px; border-radius: 50px; transition: all 0.3s;}
@@ -33,9 +33,10 @@ header nav ul li:hover a{text-decoration: underline;}
   }
 }
 .text-box p.hi{position: absolute; top: 250px; left: 55%; transform: translateX(-50%); font-size: 50px; white-space: nowrap;}
-.text-box p.always{position: absolute; top:60%; left: 30px; font-size: 18px; font-weight: 300;}
+.text-box p.always{position: absolute; top:55%; left: 30px; font-size: 18px; font-weight: 300;}
 
 #about{width: 100%; height: 100vh; background: url(../img/bg.jpg) no-repeat;}
+#about .inner{height: 100%; padding: 0 30px;}
 
 /*pc 화면*/
 @media screen and (min-width:1200px) {
