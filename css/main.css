@@ -82,7 +82,7 @@ header nav ul li a{font-size: 26px;}
 .planet3 .planet3-click a img{width: 20px;}
 .planet3 .planet3-click a p{font-size: 24px;margin-left: 20px;}
 
-#about .inner{padding: 50px;}
+#about .inner{padding: 70px;}
 .about-box{display: flex; justify-content: space-between;}
 
 .about-box .about-me{width: calc((100% - 130px) / 2); margin-right: 20px;}
@@ -102,12 +102,10 @@ header nav ul li a{font-size: 26px;}
 .edu ul li strong{display: block; font-size: 24px; width: 50%;}
 .edu ul li span{display: block; font-size: 20px; width: 50%;} 
 
-.skill h3{padding: 30px 0; font-size: 30px;}
-.skill .skill-box img{width: calc((100% - 80px) / 8); padding: 15px 0;}
+.skill h3{padding: 30px 0; font-size: 36px;}
+.skill .skill-box{display: flex; justify-content: space-between;}
+.skill .skill-box img{width: calc((100% - 300px) / 8); padding: 15px 0;}
 .skill .skill-box img:nth-child(5){padding: 30px 0;}
-
-
-
 
 
 
