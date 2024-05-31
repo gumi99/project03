@@ -90,7 +90,7 @@ header nav ul li:hover a{text-decoration: underline;}
 #portfolio .port h4{font-style: normal;padding: 20px; font-size: 20px; white-space: nowrap;}
 #portfolio .port img{width: 300px; height: auto;}
 #portfolio .port .port-btn a{display: inline-block; width: 195px; height: 40px; padding:5px 10px; border: 2px solid #000; border-radius: 15px; font-weight: 800; transition: all 0.3s; font-size: 18px; margin-top: 10px;}
-#portfolio .port .port-btn a:hover{background-color: #ff510c;}
+#portfolio .port .port-btn a:hover{background-color: #ff833b;}
 #portfolio .port .port-info{position: absolute; left: 50%; transform: translateX(-50%); margin-top: 30px; white-space: nowrap;}
 #portfolio .port .port-info p{text-align: left;}
 #portfolio .port .port-info p strong{margin-right: 5px;}
@@ -100,13 +100,22 @@ header nav ul li:hover a{text-decoration: underline;}
 #portfolio .port .port-btn.port02-btn a:hover{background-color: #E8DCB2;}
 #portfolio .port .port-btn.port02-btn a:first-child{width: 120px; margin-right: 5px;}
 
-#portfolio .port.port03 .port-btn.port02-btn a:hover{background-color: #002A53; color: #fff;}
+#portfolio .port.port03 .port-btn.port02-btn a:hover{background-color: #F8FCFF;}
+#portfolio .port.port04 .port-btn.port02-btn a:hover{background-color: #d89dff;}
 
-
+#portfolio .port.port06 .port-btn a:hover{background-color: #bdf7ff;}
 
 
 /*pc 화면*/
 @media screen and (min-width:1200px) {
+
+  br{
+    display: inline-block;
+
+    content: " ";
+
+    padding: 0 2px;
+ }
 
 header{height: 80px; padding: 40px;}
 header nav ul{justify-content: flex-start;}
@@ -151,6 +160,19 @@ header nav ul li a{font-size: 26px;}
 .skill .skill-box{display: flex; justify-content: space-between;}
 .skill .skill-box img{width: calc((100% - 300px) / 8); padding: 15px 0;}
 .skill .skill-box img:nth-child(5){padding: 30px 0;}
+
+#portfolio .inner{padding: 150px;}
+#portfolio  .inner p.let{font-size: 50px;}
+#portfolio  .inner p.st{font-size: 48px; margin-left:60px ;}
+
+#portfolio .port{width: 800px; height: 500px; background-color: #F9F9F9; padding: 0; padding: 20px 30px; position: relative; margin-bottom: 100px;}
+#portfolio .port h4{padding: 30px; font-size: 26px; position: absolute; bottom: -80px; left: 50%; transform: translateX(-50%); }
+#portfolio .port img{width: 500px; height: auto;}
+
+#portfolio .port .port-info{position: absolute; top: 0; left: 50px;}
+
+#portfolio .port:nth-last-of-type(2n-1){transform: translateX(200px);}
+#portfolio .port:nth-last-of-type(2n){transform: translateX(800px);}
 
 
 
