@@ -86,9 +86,19 @@ header nav ul li:hover a{text-decoration: underline;}
 #portfolio  .inner p.let{font-size: 32px; font-weight: 800;}
 #portfolio  .inner p.st{font-size: 30px; font-weight: 800; margin-left: 50px;}
 
-#portfolio .port01{margin-top: 50px; position: relative;}
-#portfolio .port01 h4{font-style: normal; text-align: center; padding: 20px; font-size: 20px;}
-#portfolio .port01 img{width: 250px; height: auto; position: absolute; top:80px; left: 50%; transform: translateX(-50%);}
+#portfolio .port{margin-top: 50px; text-align: center; padding: 50px;}
+#portfolio .port h4{font-style: normal;padding: 20px; font-size: 20px;}
+#portfolio .port img{width: 250px; height: auto;}
+#portfolio .port .port-btn a{display: inline-block; width: 195px; height: 40px; padding:5px 10px; border: 2px solid #000; border-radius: 15px; font-weight: 800; transition: all 0.3s; font-size: 18px; margin-top: 10px;}
+#portfolio .port .port-btn a:hover{background-color: #ff510c;}
+#portfolio .port .port-info{position: absolute; left: 50%; transform: translateX(-50%); margin-top: 30px;}
+#portfolio .port .port-info p{text-align: left;}
+#portfolio .port .port-info p strong{margin-right: 5px;}
+
+#portfolio .port.port02 .port-btn.port02-btn{display: flex; justify-content: center;}
+#portfolio .port.port02 .port-btn.port02-btn a{padding: 5px;}
+#portfolio .port.port02 .port-btn.port02-btn a:first-child{width: 120px; margin-right: 5px;}
+
 
 /*pc 화면*/
 @media screen and (min-width:1200px) {
