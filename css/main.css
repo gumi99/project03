@@ -8,10 +8,10 @@ header nav ul li a{font-size: 18px; color: #fff;}
 header nav ul li:hover a{text-decoration: underline;}
 
 #main-visual{width: 100%; height: 120vh; position: relative; overflow: hidden;}
-#main-visual .main-bg{width: 100%; height: 100%; background: url(../img/bg.jpg) no-repeat; z-index: -1; }
+#main-visual .main-bg{width: 100%; height: 100%; background: url(../img/bg.jpg) no-repeat; z-index: -1;}
 
-.planet1 img{position: absolute; top: 5%; left: -180px; width: 105%; height: auto;}
-.planet2 img{position: absolute; top: 59%; right: -90px; width: 50%; height: auto;}
+.planet1 img{position: absolute; top: 5%; left: -180px; width: 105%; height: auto; animation: rotate 100s infinite;}
+.planet2 img{position: absolute; top: 59%; right: -90px; width: 50%; height: auto; animation: rotate02 160s infinite;}
 .planet3 .planet3-img img:first-child{position: absolute; top: 75%; left: -50px; width: 60%; transform: rotate(45deg); cursor: pointer; transition: all 0.3s;}
 .planet3 .planet3-img img:first-child:hover{scale: 0.99;}
 .planet3 .planet3-img img:last-child{position: absolute; top: 75%; left: 30px; width: 45%; height: auto; cursor: pointer;}
@@ -20,6 +20,26 @@ header nav ul li:hover a{text-decoration: underline;}
 .planet3 .planet3-click a:hover{background-color: #fff;}
 .planet3 .planet3-click a img{position: absolute; top: 50%; left: 5px; transform: translateY(-50%); width: 15px; height: auto; animation: goleft  0.7s infinite;}
 .planet3 .planet3-click a p{font-weight: 600; margin-left: 15px;}
+
+@keyframes rotate {
+  0% {
+    rotate: 0;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes rotate02 {
+  0% {
+    rotate: 0;
+  }
+
+  100% {
+    rotate: -360deg;
+  }
+}
 
 @keyframes goleft{
   0% {
@@ -36,7 +56,7 @@ header nav ul li:hover a{text-decoration: underline;}
 .text-box p.hi{position: absolute; top: 250px; left: 55%; transform: translateX(-50%); font-size: 50px; white-space: nowrap;}
 .text-box p.always{position: absolute; top:55%; left: 30px; font-size: 18px; font-weight: 300;}
 
-#about{width: 100%; height: auto; background: url(../img/bg.jpg) no-repeat;}
+#about{width: 100%; height: 150vh; background: url(../img/bg.jpg) no-repeat;}
 #about .inner{height: 100%; padding: 30px;}
 .about-box .about-me{margin-bottom: 30px;}
 .about-box .about-me h3{padding: 15px 0;border-bottom: 1px solid #fff; font-size: 20px; margin-bottom: 10px;}
@@ -60,6 +80,16 @@ header nav ul li:hover a{text-decoration: underline;}
 .skill .skill-box{width: 100%; background-color: #fff; position: absolute; left: 0; z-index: 10; padding: 10px 30px;}
 .skill .skill-box img{width: calc((100% - 15px) / 4); padding: 10px 0;}
 .skill .skill-box img:nth-child(5){padding: 20px 0;}
+
+#portfolio{width: 100%; height: auto; color: #000; font-family: "Noto Sans", sans-serif; font-style: italic;}
+#portfolio .inner{padding: 50px;}
+#portfolio  .inner p.let{font-size: 32px; font-weight: 800;}
+#portfolio  .inner p.st{font-size: 30px; font-weight: 800; margin-left: 50px;}
+
+#portfolio .port01{margin-top: 50px; position: relative;}
+#portfolio .port01 h4{font-style: normal; text-align: center; padding: 20px; font-size: 20px;}
+#portfolio .port01 img{width: 250px; height: auto; position: absolute; top:80px; left: 50%; transform: translateX(-50%);}
+
 /*pc 화면*/
 @media screen and (min-width:1200px) {
 
