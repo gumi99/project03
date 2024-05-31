@@ -86,16 +86,18 @@ header nav ul li:hover a{text-decoration: underline;}
 #portfolio  .inner p.let{font-size: 32px; font-weight: 800;}
 #portfolio  .inner p.st{font-size: 30px; font-weight: 800; margin-left: 50px;}
 
-#portfolio .port{margin-top: 50px; text-align: center; padding: 50px;}
+#portfolio .port{margin-top: 50px; text-align: center; padding: 60px 30px; position: relative;}
 #portfolio .port h4{font-style: normal;padding: 20px; font-size: 20px; white-space: nowrap;}
 #portfolio .port img{width: 300px; height: auto;}
-#portfolio .port .port-btn a{display: inline-block; width: 195px; height: 40px; padding:5px 10px; border: 2px solid #000; border-radius: 15px; font-weight: 800; transition: all 0.3s; font-size: 18px; margin-top: 10px;}
+#portfolio .port .port-btn a{display: inline-block; width: 195px; height: 40px; padding:5px 10px; border: 2px solid #000; border-radius: 15px; font-weight: 800; transition: all 0.3s; font-size: 18px; margin-top: 10px; background-color: #fff;}
 #portfolio .port .port-btn a:hover{background-color: #ff833b;}
-#portfolio .port .port-info{position: absolute; left: 50%; transform: translateX(-50%); margin-top: 30px; white-space: nowrap;}
+
+#portfolio .port .port-info{position: absolute; bottom:-50px; left: 50%; transform: translateX(-50%);white-space: nowrap;}
+#portfolio .port .port-info h3{display: none;}
 #portfolio .port .port-info p{text-align: left;}
 #portfolio .port .port-info p strong{margin-right: 5px;}
 
-#portfolio .port .port-btn.port02-btn{display: flex; justify-content: center;}
+#portfolio .port .port-btn.port02-btn{display: flex; justify-content: center; }
 #portfolio .port .port-btn.port02-btn a{padding: 5px;}
 #portfolio .port .port-btn.port02-btn a:hover{background-color: #E8DCB2;}
 #portfolio .port .port-btn.port02-btn a:first-child{width: 120px; margin-right: 5px;}
@@ -108,14 +110,6 @@ header nav ul li:hover a{text-decoration: underline;}
 
 /*pc 화면*/
 @media screen and (min-width:1200px) {
-
-  br{
-    display: inline-block;
-
-    content: " ";
-
-    padding: 0 2px;
- }
 
 header{height: 80px; padding: 40px;}
 header nav ul{justify-content: flex-start;}
@@ -165,27 +159,21 @@ header nav ul li a{font-size: 26px;}
 #portfolio  .inner p.let{font-size: 50px;}
 #portfolio  .inner p.st{font-size: 48px; margin-left:60px ;}
 
-#portfolio .port{width: 800px; height: 500px; background-color: #F9F9F9; padding: 0; padding: 20px 30px; position: relative; margin-bottom: 100px;}
-#portfolio .port h4{padding: 30px; font-size: 26px; position: absolute; bottom: -80px; left: 50%; transform: translateX(-50%); }
-#portfolio .port img{width: 500px; height: auto;}
+#portfolio .port{display: flex; align-items: center; justify-content: space-around;}
+#portfolio .port:nth-child(2n-1){flex-direction: row-reverse;}
+#portfolio .port h4{display: none;}
 
-#portfolio .port .port-info{position: absolute; top: 0; left: 50px;}
+#portfolio .port .port-box{padding: 20px 50px; background-color: #F9F9F9; position: relative;}
+#portfolio .port img{width: 500px;}
 
-#portfolio .port:nth-last-of-type(2n-1){transform: translateX(200px);}
-#portfolio .port:nth-last-of-type(2n){transform: translateX(800px);}
+#portfolio .port .port-btn,
+#portfolio .port .port-btn.port02-btn{ position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
+#portfolio .port .port-btn a{margin-top: 0;}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#portfolio .port .port-info{position: static; transform: none; padding: 0 30px;}
+#portfolio .port .port-info p{font-size: 20px; line-height: 1.5;}
+#portfolio .port .port-info p strong{margin-right: 7px;}
+#portfolio .port .port-info h3{display: block; font-style: normal; text-align: left; font-size: 30px; padding: 20px 0; }
 
 
 
