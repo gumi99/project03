@@ -18,4 +18,9 @@ $(document).ready(function(){//시작
     $(".planet3 .planet3-img img:first-child").fadeIn();
     $(".planet3 .planet3-click a").fadeIn();
   });
+
+  $(".port-box").hover(function(){
+    $(this).find(".port-btn,.port02-btn").toggleClass("active");
+    $(this).toggleClass("active");
+  });
 });//끝

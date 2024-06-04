@@ -163,19 +163,26 @@ header nav ul li a{font-size: 26px;}
 #portfolio .port:nth-child(2n-1){flex-direction: row-reverse;}
 #portfolio .port h4{display: none;}
 
-#portfolio .port .port-box{padding: 20px 50px; background-color: #F9F9F9; position: relative;}
+#portfolio .port .port-box{padding: 20px 50px; background-color: #F9F9F9; position: relative; transition: all 0.3s;}
+#portfolio .port .port-box.active{border-radius: 320px;}
+
 #portfolio .port img{width: 500px;}
 
 #portfolio .port .port-btn,
-#portfolio .port .port-btn.port02-btn{ position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
+#portfolio .port .port-btn.port02-btn{ opacity: 0; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); transition: all 0.3s;}
+
+#portfolio .port .port-btn.active,
+#portfolio .port .port-btn.port02-btn.active{opacity: 1;}
+
 #portfolio .port .port-btn a{margin-top: 0;}
 
-#portfolio .port .port-info{position: static; transform: none; padding: 0 30px;}
+#portfolio .port .port-info{opacity: 0; position: static; transform: none; padding: 0 30px; transition: all 0.3s;}
+#portfolio .port .port-info.active{opacity: 1;}
+
+
 #portfolio .port .port-info p{font-size: 20px; line-height: 1.5;}
 #portfolio .port .port-info p strong{margin-right: 7px;}
-#portfolio .port .port-info h3{display: block; font-style: normal; text-align: left; font-size: 30px; padding: 20px 0; }
-
-
+#portfolio .port .port-info h3{display: block; font-family:"Noto Sans KR", sans-serif;  text-align: left; font-size: 30px; padding: 20px 0; }
 
 
 }
