@@ -164,8 +164,16 @@ header nav ul li:hover a{border-bottom: 2px solid #ff5100; color: #D9D9D9;}
   #footer .with{padding: 30px; margin-bottom: 20px; padding-left: 30px;}
   #footer .with li{font-size: 32px; font-weight: 700; letter-spacing: 1px; line-height: 1.7;}
 
-  MARQUEE{padding: 20px 0; font-size: 24px; font-weight: 500; border-top: 1px solid #fff; border-bottom: 1px solid #fff;}
-
+  .thank{white-space: nowrap; padding: 20px 0;  border-top: 1px solid #fff; border-bottom: 1px solid #fff;}
+  .thank p{animation: maqee 30s infinite forwards; will-change: transform;font-size: 24px; font-weight: 500; }
+  @keyframes maqee{
+    0% {
+      padding-left: 100%;
+    }
+    100%{
+      padding-left: 0;
+    }
+  }
   .f-info{padding: 30px; font-style: italic; font-size: 18px; font-weight: 100;}
   .f-info p:nth-child(2){padding: 5px 0 20px;}
   .f-info p:last-child{font-size: 12px;}
@@ -262,7 +270,7 @@ header nav ul li a{font-size: 26px;}
 #footer .with{padding: 70px;}
 #footer .with li{font-size: 50px;}
 
-MARQUEE{font-size: 36px;}
+.thank p{font-size: 36px;}
 
 .f-info{padding: 70px; font-size: 24px;}
 .f-info p:nth-child(2){padding: 10px 0 25px;}
