@@ -59,6 +59,8 @@ header nav ul li:hover a{border-bottom: 2px solid #ff5100; color: #D9D9D9;}
 .text-box .hi .typing-txt{display: none;}
 .text-box .hi .typing ul li.on {display: inline-block; animation: cursor 0.9s infinite;}
 
+.cusor{display: none;}
+
 @keyframes cursor{ 
   0%{border-right: 1px solid transparent} 
   50%{border-right: 1px solid #ff5100} 
@@ -233,7 +235,7 @@ header nav ul li a{font-size: 26px;}
 #portfolio  .inner p.let{font-size: 50px;}
 #portfolio  .inner p.st{font-size: 48px; margin-left:60px ;}
 
-#portfolio .port{display: flex; align-items: center; justify-content: space-around;}
+#portfolio .port{position: relative; display: flex; align-items: center; justify-content: space-around;}
 #portfolio .port:nth-child(2n-1){flex-direction: row-reverse;}
 #portfolio .port h4{display: none;}
 
@@ -277,4 +279,6 @@ header nav ul li a{font-size: 26px;}
 .f-info p:last-child{font-size: 16px;}
 
 .go-top img{width: 100px; height: auto;}
+.cusor{display: block; position: absolute;}
+.cusor img{width: 30px; height: auto;}
 }
