@@ -175,10 +175,6 @@ header nav ul li:hover a {
   animation: cursor 0.9s infinite;
 }
 
-.cusor {
-  display: none;
-}
-
 @keyframes cursor {
   0% {
     border-right: 1px solid transparent
@@ -203,13 +199,13 @@ header nav ul li:hover a {
   font-weight: 300;
 }
 
-#about {
+.about {
   width: 100%;
   height: 150vh;
   background: url(../img/bg.jpg) no-repeat;
 }
 
-#about .inner {
+.about .inner {
   height: 100%;
   padding: 30px;
 }
@@ -294,30 +290,14 @@ header nav ul li:hover a {
   width: 70%;
 }
 
-.skill h3 {
-  padding: 15px 0;
-  font-size: 20px;
-}
-
-.skill .skill-box {
+.skill{
   width: 100%;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  z-index: 10;
-  padding: 10px 30px;
+  height: 400px;
+  background-color: #000;
 }
 
-.skill .skill-box img {
-  width: calc((100% - 15px) / 4);
-  padding: 10px 0;
-}
 
-.skill .skill-box img:nth-child(5) {
-  padding: 20px 0;
-}
-
-#portfolio {
+.portfolio {
   width: 100%;
   height: auto;
   color: #000;
@@ -325,41 +305,41 @@ header nav ul li:hover a {
   font-style: italic;
 }
 
-#portfolio .inner {
+.portfolio .inner {
   padding: 100px 40px;
 }
 
-#portfolio .inner p.let {
+.portfolio .inner p.let {
   font-size: 32px;
   font-weight: 800;
 }
 
-#portfolio .inner p.st {
+.portfolio .inner p.st {
   font-size: 30px;
   font-weight: 800;
   margin-left: 50px;
 }
 
-#portfolio .port {
+.portfolio .port {
   margin-top: 50px;
   text-align: center;
   padding: 60px 30px;
   position: relative;
 }
 
-#portfolio .port h4 {
+.portfolio .port h4 {
   font-style: normal;
   padding: 20px;
   font-size: 20px;
   white-space: nowrap;
 }
 
-#portfolio .port img {
+.portfolio .port img {
   width: 300px;
   height: auto;
 }
 
-#portfolio .port .port-btn a {
+.portfolio .port .port-btn a {
   display: inline-block;
   width: 195px;
   height: 40px;
@@ -373,11 +353,11 @@ header nav ul li:hover a {
   background-color: #fff;
 }
 
-#portfolio .port .port-btn a:hover {
+.portfolio .port .port-btn a:hover {
   background-color: #ff5100;
 }
 
-#portfolio .port .port-info {
+.portfolio .port .port-info {
   position: absolute;
   bottom: -50px;
   left: 50%;
@@ -385,60 +365,76 @@ header nav ul li:hover a {
   white-space: nowrap;
 }
 
-#portfolio .port .port-info h3 {
-  display: none;
-}
-
-#portfolio .port .port-info p {
+.portfolio .port .port-info p {
   text-align: left;
 }
 
-#portfolio .port .port-info p strong {
+.portfolio .port .port-info p strong {
   margin-right: 5px;
 }
 
-#portfolio .port .port-btn.port02-btn {
+.portfolio .port .port-btn.port02-btn {
   display: flex;
   justify-content: center;
 }
 
-#portfolio .port .port-btn.port02-btn a {
+.portfolio .port .port-btn.port02-btn a {
   padding: 5px;
 }
 
-#portfolio .port .port-btn.port02-btn a:hover {
+.portfolio .port .port-btn.port02-btn a:hover {
   background-color: #E8DCB2;
 }
 
-#portfolio .port .port-btn.port02-btn a:first-child {
+.portfolio .port .port-btn.port02-btn a:first-child {
   width: 120px;
   margin-right: 5px;
 }
 
-#portfolio .port.port03 .port-btn.port02-btn a:hover {
+.portfolio .port.port03 .port-btn.port02-btn a:hover {
   background-color: #F8FCFF;
 }
 
-#portfolio .port.port04 .port-btn.port02-btn a:hover {
+.portfolio .port.port04 .port-btn.port02-btn a:hover {
   background-color: #d89dff;
 }
 
-#portfolio .port.port06 .port-btn a:hover {
+.portfolio .port.port06 .port-btn a:hover {
   background-color: #bdf7ff;
 }
 
 .info {
   width: 100%;
   height: 300px;
-  padding: 50px 0;
   color: #000;
-  border-top: 10px solid #000;
+  white-space: nowrap;
+  position: relative;
 }
 
-.sponge {
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
+.sponge{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.sponge .sponge-center{
+  position: relative;
+}
+
+.sponge-img {
+  width: 150px;
+  height: 150px;
+  background: url(../img/스펀지.png) no-repeat center / contain;
+  transition: all 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.sponge-img:hover {
+  opacity: 0;
 }
 
 .sponge ul {
@@ -457,25 +453,12 @@ header nav ul li:hover a {
   padding: 0 50px;
 }
 
-.sponge img {
-  width: 200px;
-  height: auto;
-  padding: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.sponge img:hover {
-  opacity: 0;
-}
-
 .info .sponge-txt {
   color: #000;
-  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @keyframes anime_textup {
@@ -533,20 +516,20 @@ header nav ul li:hover a {
   animation-delay: .6s;
 }
 
-#footer {
+footer {
   width: 100%;
   height: 500px;
   background-color: #000;
   position: relative;
 }
 
-#footer .with {
+footer .with {
   padding: 30px;
   margin-bottom: 20px;
   padding-left: 30px;
 }
 
-#footer .with li {
+footer .with li {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -775,51 +758,47 @@ header nav ul li:hover a {
     padding: 30px 0;
   }
 
-  #portfolio .inner {
+  .portfolio .inner {
     padding: 150px;
   }
 
-  #portfolio .inner p.let {
+  .portfolio .inner p.let {
     font-size: 50px;
   }
 
-  #portfolio .inner p.st {
+  .portfolio .inner p.st {
     font-size: 48px;
     margin-left: 60px;
   }
 
-  #portfolio .port {
+  .portfolio .port {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
 
-  #portfolio .port:nth-child(2n-1) {
+  .portfolio .port:nth-child(2n-1) {
     flex-direction: row-reverse;
   }
 
-  #portfolio .port h4 {
-    display: none;
-  }
-
-  #portfolio .port .port-box {
+  .portfolio .port .port-box {
     padding: 20px 50px;
     background-color: #F9F9F9;
     position: relative;
     transition: all 0.4s;
   }
 
-  #portfolio .port .port-box.active {
+  .portfolio .port .port-box.active {
     border-radius: 320px;
   }
 
-  #portfolio .port img {
+  .portfolio .port img {
     width: 500px;
   }
 
-  #portfolio .port .port-btn,
-  #portfolio .port .port-btn.port02-btn {
+  .portfolio .port .port-btn,
+  .portfolio .port .port-btn.port02-btn {
     opacity: 0;
     position: absolute;
     bottom: 20px;
@@ -828,16 +807,16 @@ header nav ul li:hover a {
     transition: all 0.5s;
   }
 
-  #portfolio .port .port-btn.active,
-  #portfolio .port .port-btn.port02-btn.active {
+  .portfolio .port .port-btn.active,
+  .portfolio .port .port-btn.port02-btn.active {
     opacity: 1;
   }
 
-  #portfolio .port .port-btn a {
+  .portfolio .port .port-btn a {
     margin-top: 0;
   }
 
-  #portfolio .port .port-info {
+  .portfolio .port .port-info {
     opacity: 1;
     position: static;
     transform: none;
@@ -846,16 +825,16 @@ header nav ul li:hover a {
   }
 
 
-  #portfolio .port .port-info p {
+  .portfolio .port .port-info p {
     font-size: 20px;
     line-height: 1.5;
   }
 
-  #portfolio .port .port-info p strong {
+  .portfolio .port .port-info p strong {
     margin-right: 7px;
   }
 
-  #portfolio .port .port-info h3 {
+  .portfolio .port .port-info h3 {
     display: block;
     font-family: "Noto Sans KR", sans-serif;
     text-align: left;
@@ -864,8 +843,7 @@ header nav ul li:hover a {
   }
 
   .info {
-    height: 500px;
-    padding: 80px 0;
+    height: 620px;
   }
 
   .sponge ul li {
@@ -876,39 +854,27 @@ header nav ul li:hover a {
     padding: 0 70px 0 100px;
   }
 
-  .sponge img {
+  .sponge-img {
     width: 300px;
-    height: auto;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    transition: all 0.5s;
-    padding: 0;
+    height: 300px;
   }
 
-  .sponge img:hover {
-    opacity: 0;
-  }
 
   .info .sponge-txt {
     font-size: 20px;
     font-weight: 500;
-    color: #000;
-    text-align: center;
+    bottom: 40px;
   }
 
-  #footer {
+  footer {
     height: 800px;
   }
 
-  #footer .with {
+  footer .with {
     padding: 70px;
   }
 
-  #footer .with li {
+  footer .with li {
     font-size: 50px;
   }
 
@@ -931,16 +897,6 @@ header nav ul li:hover a {
 
   .go-top img {
     width: 100px;
-    height: auto;
-  }
-
-  .cusor {
-    display: block;
-    position: absolute;
-  }
-
-  .cusor img {
-    width: 30px;
     height: auto;
   }
 }
