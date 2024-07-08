@@ -3,6 +3,7 @@
 /*모바일 기본화면*/
 #wrap {
   min-width: 320px;
+  overflow: hidden;
 }
 
 header {
@@ -199,12 +200,12 @@ header nav ul li:hover a {
   font-weight: 300;
 }
 
-.about {
+#about {
   width: 100%;
   background: url(../img/bg.jpg) no-repeat;
 }
 
-.about .inner {
+#about .inner {
   padding: 40px;
 }
 
@@ -355,7 +356,7 @@ header nav ul li:hover a {
 
 
 
-.portfolio {
+#portfolio {
   width: 100%;
   height: auto;
   color: #000;
@@ -363,41 +364,41 @@ header nav ul li:hover a {
   font-style: italic;
 }
 
-.portfolio .inner p.let {
+#portfolio .inner p.let {
   font-size: 32px;
   font-weight: 800;
 }
 
-.portfolio .inner .port-tit{
+#portfolio .inner .port-tit{
   padding: 20px 30px;
 }
 
-.portfolio .inner p.st {
+#portfolio .inner p.st {
   font-size: 30px;
   font-weight: 800;
   margin-left: 50px;
 }
 
-.portfolio .port {
+#portfolio .port {
   margin-top: 50px;
   text-align: center;
   padding: 60px 0;
   position: relative;
 }
 
-.portfolio .port h4 {
+#portfolio .port h4 {
   font-style: normal;
   padding: 20px;
   font-size: 20px;
   white-space: nowrap;
 }
 
-.portfolio .port img {
+#portfolio .port img {
   width: 300px;
   height: auto;
 }
 
-.portfolio .port .port-btn a {
+#portfolio .port .port-btn a {
   display: inline-block;
   width: 195px;
   height: 40px;
@@ -411,11 +412,11 @@ header nav ul li:hover a {
   background-color: #fff;
 }
 
-.portfolio .port .port-btn a:hover {
+#portfolio .port .port-btn a:hover {
   background-color: #ff5100;
 }
 
-.portfolio .port .port-info {
+#portfolio .port .port-info {
   position: absolute;
   bottom: -50px;
   left: 50%;
@@ -423,45 +424,51 @@ header nav ul li:hover a {
   white-space: nowrap;
 }
 
-.portfolio .port .port-info h3{
+#portfolio .port .port-info h3{
   display: none;
 }
 
-.portfolio .port .port-info p {
+#portfolio .port .port-info p {
   text-align: left;
 }
 
-.portfolio .port .port-info p strong {
+#portfolio .port .port-info p strong {
   margin-right: 5px;
 }
 
-.portfolio .port .port-btn.port02-btn {
+#portfolio .port .port-btn.port02-btn {
   display: flex;
   justify-content: center;
 }
 
-.portfolio .port .port-btn.port02-btn a {
+#portfolio .port .port-btn.port02-btn a {
   padding: 5px;
 }
 
-.portfolio .port .port-btn.port02-btn a:hover {
+#portfolio .port .port-btn.port02-btn a:hover {
   background-color: #E8DCB2;
 }
 
-.portfolio .port .port-btn.port02-btn a:first-child {
+#portfolio .port .port-btn.port02-btn a:first-child {
   width: 120px;
   margin-right: 5px;
 }
 
-.portfolio .port.port03 .port-btn.port02-btn a:hover {
+#portfolio .port.port03 .port-btn.port02-btn a:hover {
   background-color: #F8FCFF;
 }
 
-.portfolio .port.port04 .port-btn.port02-btn a:hover {
+#portfolio .port.port04 .port-btn.port02-btn a:hover {
   background-color: #d89dff;
 }
 
-.portfolio .port.port06 .port-btn a:hover {
+#portfolio .port.port05 .port-btn.port02-btn a:hover {
+  background-color: #0366A8;
+  color: #fff;
+  border: 2px solid lightgray;
+}
+
+#portfolio .port.port06 .port-btn a:hover {
   background-color: #bdf7ff;
 }
 
@@ -501,7 +508,7 @@ header nav ul li:hover a {
 
 .sponge ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
 }
@@ -512,7 +519,7 @@ header nav ul li:hover a {
 }
 
 .sponge ul li:nth-child(2) {
-  padding: 0 50px;
+  padding: 0 50px 0 70px;
 }
 
 .info .sponge-txt {
@@ -578,20 +585,20 @@ header nav ul li:hover a {
   animation-delay: .6s;
 }
 
-footer {
+#footer {
   width: 100%;
-  height: 500px;
+  height: 460px;
   background-color: #000;
   position: relative;
 }
 
-footer .with {
+#footer .with {
   padding: 30px;
   margin-bottom: 20px;
   padding-left: 30px;
 }
 
-footer .with li {
+#footer .with li {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -831,51 +838,51 @@ footer .with li {
     width: calc((100% - 100px)/8);
   }
 
-  .portfolio .inner {
+  #portfolio .inner {
     padding: 150px;
   }
 
-  .portfolio .inner p.let {
+  #portfolio .inner p.let {
     font-size: 50px;
   }
 
-  .portfolio .inner p.st {
+  #portfolio .inner p.st {
     font-size: 48px;
     margin-left: 60px;
   }
 
-  .portfolio .port {
+  #portfolio .port {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
 
-  .portfolio .port h4{
+  #portfolio .port h4{
     display: none;
   }
 
-  .portfolio .port:nth-child(2n-1) {
+  #portfolio .port:nth-child(2n-1) {
     flex-direction: row-reverse;
   }
 
-  .portfolio .port .port-box {
+  #portfolio .port .port-box {
     padding: 20px 50px;
     background-color: #F9F9F9;
     position: relative;
     transition: all 0.4s;
   }
 
-  .portfolio .port .port-box.active {
+  #portfolio .port .port-box.active {
     border-radius: 320px;
   }
 
-  .portfolio .port img {
+  #portfolio .port img {
     width: 500px;
   }
 
-  .portfolio .port .port-btn,
-  .portfolio .port .port-btn.port02-btn {
+  #portfolio .port .port-btn,
+  #portfolio .port .port-btn.port02-btn {
     opacity: 0;
     position: absolute;
     bottom: 20px;
@@ -884,16 +891,16 @@ footer .with li {
     transition: all 0.5s;
   }
 
-  .portfolio .port .port-btn.active,
-  .portfolio .port .port-btn.port02-btn.active {
+  #portfolio .port .port-btn.active,
+  #portfolio .port .port-btn.port02-btn.active {
     opacity: 1;
   }
 
-  .portfolio .port .port-btn a {
+  #portfolio .port .port-btn a {
     margin-top: 0;
   }
 
-  .portfolio .port .port-info {
+  #portfolio .port .port-info {
     position: static;
     transform: none;
     padding: 0 30px;
@@ -901,16 +908,16 @@ footer .with li {
   }
 
 
-  .portfolio .port .port-info p {
+  #portfolio .port .port-info p {
     font-size: 20px;
     line-height: 1.5;
   }
 
-  .portfolio .port .port-info p strong {
+  #portfolio .port .port-info p strong {
     margin-right: 7px;
   }
 
-  .portfolio .port .port-info h3 {
+  #portfolio .port .port-info h3 {
     display: block;
     font-family: "Noto Sans KR", sans-serif;
     text-align: left;
@@ -927,7 +934,7 @@ footer .with li {
   }
 
   .sponge ul li:nth-child(2) {
-    padding: 0 70px 0 100px;
+    padding: 0 100px 0 130px;
   }
 
   .sponge-img {
@@ -936,21 +943,22 @@ footer .with li {
   }
 
 
+
   .info .sponge-txt {
     font-size: 20px;
     font-weight: 500;
     bottom: 40px;
   }
 
-  footer {
+  #footer {
     height: 800px;
   }
 
-  footer .with {
+  #footer .with {
     padding: 70px;
   }
 
-  footer .with li {
+  #footer .with li {
     font-size: 50px;
   }
 
