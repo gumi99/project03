@@ -194,7 +194,7 @@ header nav ul li:hover a {
 
 .text-box .always {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 30px;
   font-size: 18px;
   font-weight: 300;
@@ -733,7 +733,6 @@ header nav ul li:hover a {
   }
 
   .text-box .always {
-    top: 1700px;
     left: 70px;
     font-size: 36px;
   }
