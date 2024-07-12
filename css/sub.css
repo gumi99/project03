@@ -1,0 +1,141 @@
+#sub-wrap {
+    min-width: 320px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    padding: 20px 20px 0  20px;
+}
+
+header nav ul li a {
+    border-bottom: 2px solid #E8DCB2;
+    transition: all 0.2s;
+    position: relative;
+}
+
+header nav ul li a::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-bottom: 10px solid #E8DCB2;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+header nav ul li:hover a::after{
+opacity: 1;
+}
+
+.intro-img{
+    margin: 10px;
+    width: 100%;
+    height: 30vh;
+    background:url(../img/노트북-목업.png) no-repeat center / contain;
+    transition: all 0.3s;
+}
+
+.sub01-intro {
+    padding: 0 30px;
+    color: black;
+}
+
+.sub01-intro h3 {
+    height: 60px;
+    font-size: 18px;
+    position: relative;
+}
+
+.sub01-intro h3::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color:#2e2e2e;
+}
+
+.sub01-intro p{
+    font-size: 14px;
+}
+
+.sub01-intro p:last-child{
+    padding-bottom: 10px;
+}
+
+.intro-txt{
+    padding-top: 10px;
+}
+
+.intro-txt-wrap {
+    padding: 10px 0;
+}
+
+
+.intro-txt-wrap ul li a {
+    font-size: 14px;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #111;
+    transition: ease-in-out 0.3s;
+
+}
+
+.intro-txt-wrap ul li:hover a {
+    background-color: #fffaec;
+}
+
+.btn-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.btn-go {
+    width: 140px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 20px;
+    border: 1px solid #111;
+    background-color: #E8DCB2;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-out 0.2s;
+}
+
+.btn-go:hover {
+    background-color: #111;
+    color: #fff;
+    font-size: 13px;
+}
+
+@media screen and (min-width:700px) {
+    .btn-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 20px;
+    }
+    
+    
+}
+
+@media screen and (min-width:1200px) {
+    
+}
