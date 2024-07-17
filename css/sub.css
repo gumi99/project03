@@ -161,7 +161,7 @@ header .type02 ul li a::after {
 
 .btn-go.type02 {
     width: 140px;
-    height: 30px;
+    height: 35px;
     font-size: 12px;
     border: 1px solid #abccff;
     background-color: #abccff;
@@ -206,13 +206,13 @@ header .type02 ul li a::after {
 
 /*sub02 끝*/
 
-    /*sub03 시작*/
-    .intro-img.type03{
-        background:url(../img/sub03.jpg) no-repeat center / cover;
-        
-    }
-    /*sub03 끝*/
+/*sub03 시작*/
 
+.intro-img.type03 {
+    background: url(../img/sub03.jpg) no-repeat center / cover;
+}
+
+/*sub03 끝*/
 
 @media screen and (min-width:420px) {
 
@@ -315,9 +315,8 @@ header .type02 ul li a::after {
 
     /*sub02 끝*/
     /*sub03 시작*/
-    .intro-img.type03{
-        
-    }
+    .intro-img.type03 {}
+
     /*sub03 끝*/
 }
 
@@ -491,5 +490,6 @@ header .type02 ul li a::after {
     .intro-txt-wrap.type02 ul li a {
         font-size: 24px;
     }
+
     /*sub02 끝*/
 }
