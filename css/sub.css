@@ -9,7 +9,7 @@
 }
 
 header {
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
 }
 
 header nav ul li a {
@@ -160,34 +160,22 @@ header .type02 ul li a::after {
 
 
 .btn-go.type02 {
-    width: 140px;
-    height: 35px;
-    font-size: 12px;
     border: 1px solid #abccff;
     background-color: #abccff;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease-out 0.2s;
 }
 
-.btn-gotype02:hover {
+.btn-go.type02:hover {
     background-color: #111;
     border: 1px solid #fff;
     color: #fff;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .intro-txt-wrap.type02 ul li a {
     font-size: 14px;
     padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     color: #111;
     border-bottom: 2px solid #abccff;
-    transition: ease-in-out 0.3s;
 }
 
 .intro-txt-wrap.type02 ul li a strong {
@@ -208,8 +196,50 @@ header .type02 ul li a::after {
 
 /*sub03 시작*/
 
+header .type03 ul li a {
+    border-bottom: 2px solid #d8abff;
+}
+
+header .type03 ul li a::after {
+    border-bottom: 10px solid #d8abff;
+}
+
 .intro-img.type03 {
     background: url(../img/sub03.jpg) no-repeat center / cover;
+}
+
+.sub01-intro.type03 h3 {
+    text-decoration-color: #d8abff;
+}
+
+.btn-go.type03 {
+    border: 1px solid #d8abff;
+    background-color: #d8abff;
+}
+
+.btn-go.type03:hover {
+    background-color: #111;
+    border: 1px solid #d8abff;
+    color: #d8abff;
+}
+
+.intro-txt-wrap.type03 ul li a {
+    color: #d8abff;
+    border-bottom: 2px solid #d8abff;
+}
+
+.intro-txt-wrap.type03 ul li a strong {
+    color: #d8abff;
+}
+
+
+.intro-txt-wrap.type03 ul li:hover a {
+    background-color: #d8abff;
+    color: #fff;
+}
+
+.intro-txt-wrap.type03 ul li:hover a strong {
+    color: #fff;
 }
 
 /*sub03 끝*/
