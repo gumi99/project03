@@ -654,7 +654,7 @@ header nav ul li:hover a {
 .go-top img {
   width: 50px;
   height: auto;
-  animation: rotate02 30s infinite forwards;
+  animation: rotate02 40s infinite forwards;
 }
 
 /*태블릿 화면*/
