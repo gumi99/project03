@@ -221,6 +221,7 @@ header .type03 ul li a::after {
     background-color: #111;
     border: 1px solid #d8abff;
     color: #d8abff;
+    font-size: 15px;
 }
 
 .intro-txt-wrap.type03 ul li a {
