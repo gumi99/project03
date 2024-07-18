@@ -43,7 +43,6 @@ header nav ul li:hover a::after {
     width: 100%;
     height: 30vh;
     border-radius: 200px;
-    opacity: 80%;
     background: url(../img/sub01.jpg) no-repeat center / cover;
 }
 
@@ -245,6 +244,57 @@ header .type03 ul li a::after {
 
 /*sub03 끝*/
 
+/*sub04 시작*/
+header .type04 ul li a {
+    border-bottom: 2px solid #ff9543;
+    color: #111;
+}
+
+header .type04 ul li a::after {
+    border-bottom: 10px solid #ff9543;
+}
+
+.intro-img.type04 {
+    background: url(../img/sub04.jpg) no-repeat center / cover;
+}
+
+.sub01-intro.type04 h3 {
+    text-decoration-color: #ff9543;
+}
+
+.btn-go.type04 {
+    border: 1px solid #ff9543;
+    background-color: #ff9543;
+}
+
+.btn-go.type04:hover {
+    background-color: #111;
+    border: 1px solid #111;
+    color: #ff9543;
+    font-size: 15px;
+}
+
+.intro-txt-wrap.type04 ul li a {
+    color: #ff9543;
+    border-bottom: 2px solid #ff9543;
+}
+
+.intro-txt-wrap.type04 ul li a strong {
+    color: #ff9543;
+}
+
+
+.intro-txt-wrap.type04 ul li:hover a {
+    background-color: #ff9543;
+    color: #fff;
+}
+
+.intro-txt-wrap.type04 ul li:hover a strong {
+    color: #fff;
+}
+
+/*sub04 끝*/
+
 @media screen and (min-width:420px) {
 
     /*sub01 시작*/
@@ -345,9 +395,6 @@ header .type03 ul li a::after {
     }
 
     /*sub02 끝*/
-    /*sub03 시작*/
-
-    /*sub03 끝*/
 }
 
 @media screen and (min-width:850px) {
@@ -522,4 +569,24 @@ header .type03 ul li a::after {
     }
 
     /*sub02 끝*/
+
+    /*sub03 시작*/
+    .btn-go.type03:hover {
+        font-size: 22px;
+    }
+
+    .intro-txt-wrap.type03 ul li a {
+        font-size: 24px;
+    }
+    /*sub03 끝*/
+
+    /*sub04 시작*/
+    .btn-go.type04:hover {
+        font-size: 22px;
+    }
+
+    .intro-txt-wrap.type04 ul li a {
+        font-size: 24px;
+    }
+    /*sub04 끝*/
 }
